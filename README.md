@@ -1,6 +1,7 @@
 <h3>Первый экран/Анализы</h3>
 <img width="252" alt="image" src="[https://github.com/1Mapa1/flutter_rep/img/Image.png](https://github.com/1Mapa1/flutter_rep/blob/main/img/image.png)">
 ![https://github.com/1Mapa1/flutter_rep/img/Image.png](https://github.com/1Mapa1/flutter_rep/blob/main/img/image.png)
+![alt text](example.com/logo.png)
 <h3>Второй экран/Уведомление</h3>
 <img width="245" alt="image" src="https://github.com/1Mapa1/flutter_rep/img/Image2.png">
 <h3>Третий экран/Мониторинг</h3>
