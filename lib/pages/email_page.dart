@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:my/pages/virif_email_page.dart';
-import 'package:my/widget/button.dart';
 import 'package:my/widget/img.dart';
 import 'package:my/widget/text_container.dart';
+import 'package:my/widget/input_with_button.dart';
 
 class FourthPage extends StatelessWidget{
 
@@ -58,57 +57,11 @@ class FourthPage extends StatelessWidget{
                     ],
                   ),
                   SizedBox(height: screenHeight * 0.05,),
-                  Column(
-                    children: [
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Padding(
-                            padding: const EdgeInsets.only(left: 12),
-                            child: Text(
-                              'Вход по E-mail',
-                              style: TextStyle(
-                                color: Color.fromRGBO(126, 126, 154, 1),
-                                fontSize: 16,                         
-                              ),
-                            ),
-                          ),
-                          SizedBox(width: screenWidth * 0.3,),
-                        ],
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: TextField(
-                          decoration: InputDecoration(
-                            filled: true,
-                            fillColor: Colors.grey[200],
-                            hintText: 'example@mail.ru',
-                            hintStyle: TextStyle(
-                              fontSize: 14,
-                              color: Color.fromRGBO(126, 126, 154, 1),
-                            ),
-                            border: OutlineInputBorder(
-                              borderSide: BorderSide.none,
-                              borderRadius: BorderRadius.circular(10.0),
-                            )
-                          )
-                        ),
-                      ),
-                    ],
-                  ),
-                  SizedBox(height: screenHeight * 0.02,),
-                  Button(
-                    txt: 'Далее', 
-                    page: (context) => FifthPage(), 
-                    width: 0.92,
-                    height: 0.06, 
-                    backgroundColor: Color.fromRGBO(26, 111, 238, 1),
-                    colortxt: Colors.white
-                  ),
+                  InputWithButton(), 
                   SizedBox(height: screenHeight * 0.3,),
                   Column(
                     children: [
-                      Text(
+                      const Text(
                         'Или войдите с помощью',
                         style: TextStyle(
                           fontSize: 16, 
@@ -125,7 +78,7 @@ class FourthPage extends StatelessWidget{
                             ),
                           )
                         ),
-                        child: Padding(
+                        child: const Padding(
                           padding: const EdgeInsets.symmetric(vertical: 18, horizontal: 107),
                           child: Text(
                             'Войти с Яндекс',
